@@ -1,0 +1,24 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+body { background-color: #0f172a; color: white; }
+
+.vit-header { background: white; padding: 10px 40px; display: flex; border-bottom: 3px solid #800000; }
+.vit-logo { height: 50px; width: auto; object-fit: contain; }
+
+.header { display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; background: #020617; border-bottom: 1px solid #1e293b; }
+.site-logo { height: 45px; width: auto; object-fit: contain; }
+
+.movies-container { padding: 30px; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 25px; }
+.movie-card { background: #1e293b; border-radius: 12px; overflow: hidden; cursor: pointer; transition: 0.3s; border: 1px solid #334155; }
+.movie-card:hover { transform: translateY(-5px); }
+.movie-card img { width: 100%; height: 300px; object-fit: cover; }
+.movie-info { padding: 15px; }
+
+.modal { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); display: flex; justify-content: center; align-items: center; z-index: 9999; }
+.hidden { display: none; }
+.modal-content { background: #0f172a; padding: 25px; width: 90%; max-width: 500px; border-radius: 15px; border: 1px solid #334155; position: relative; }
+.close { position: absolute; top: 10px; right: 20px; font-size: 30px; cursor: pointer; color: #94a3b8; }
+
+.add-btn { background: #10b981; color: white; border: none; padding: 10px; width: 100%; cursor: pointer; border-radius: 8px; margin: 15px 0; font-weight: bold; }
+.vit-footer { background: #020617; padding: 40px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 15px; margin-top: 50px; }
+.site-logo-footer { height: 70px; }
+.vit-logo-footer-sub { height: 35px; filter: brightness(0) invert(1); }

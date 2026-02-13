@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MuvvieHive | VIT-AP</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="vit-header"><img src="vit-logo.png" alt="VIT Logo" class="vit-logo"></header>
+  <header class="header">
+    <div class="brand-container"><img src="muvviehive-logo.png" alt="MuvvieHive Logo" class="site-logo"></div>
+    <div class="nav-controls">
+      <a href="watchlist.html" class="nav-link">My Watchlist</a>
+      <input type="text" id="searchInput" placeholder="Search for movies..." />
+    </div>
+  </header>
+
+  <main id="moviesContainer" class="movies-container"></main>
+
+  <div id="movieModal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer class="vit-footer">
+    <img src="muvviehive-logo.png" alt="MuvvieHive Logo" class="site-logo-footer">
+    <img src="vit-logo.png" alt="VIT Logo" class="vit-logo-footer-sub">
+    <p class="catchphrase">Apply Knowledge. Improve Life!</p>
+  </footer>
+
+  <script src="js/watchlist.js"></script>
+  <script src="js/app.js" type="module"></script>
+</body>
+</html>
