@@ -3,16 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <title>My Hive - MuvvieHive</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="vit-header"><img src="vit-logo.png" class="vit-logo"></header>
   <header class="header">
     <div class="brand-container"><a href="index.html"><img src="muvviehive-logo.png" class="site-logo"></a></div>
-    <div class="nav-controls"><a href="index.html" class="nav-link">⬅ Back Home</a></div>
+    <div class="nav-controls"><a href="index.html" class="nav-link">⬅ Back to Discovery</a></div>
   </header>
+
   <main id="watchlistContainer" class="movies-container"></main>
-  <script src="js/watchlist.js"></script>
+
+  <footer class="vit-footer">
+    <img src="muvviehive-logo.png" alt="MuvvieHive Logo" class="site-logo-footer">
+    <p class="catchphrase">Apply Knowledge. Improve Life!</p>
+  </footer>
+
+  <script src="watchlist.js"></script>
   <script>document.addEventListener("DOMContentLoaded", displayWatchlist);</script>
 </body>
 </html>

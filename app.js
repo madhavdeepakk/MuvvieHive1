@@ -39,7 +39,7 @@ async function openMovie(movieId) {
     <img src="${IMG_URL + movie.poster_path}" style="width:100%; border-radius:8px;"/>
     <h2 style="margin-top:15px;">${movie.title}</h2>
     <button onclick="addToWatchlist(${movie.id}, '${movie.title.replace(/'/g, "\\'")}', '${movie.poster_path}')" class="add-btn">+ Add to Watchlist</button>
-    <p><strong>Overview:</strong> ${movie.overview}</p>
+    <p style="margin-top:10px;"><strong>Overview:</strong> ${movie.overview}</p>
   `;
 }
 
